@@ -3,13 +3,17 @@ FROM php:8-cli
 RUN apt-get update && apt-get install -y zip libzip-dev openssh-server \
     && docker-php-ext-install pdo_mysql zip
 
-COPY ./ /var/www
+COPY --chown=www-data:www-data ./ /var/www
 
 #add web user
 RUN useradd -rm -d /home/web -s /bin/bash -g www-data web
 RUN echo 'web:docker' | chpasswd
 #set default login path
 RUN echo "\ncd /var/www/\n" >> /home/web/.bashrc
+
+#set web permissions
+RUN find /var/www -type d -print0 | xargs -0 chmod 755
+RUN find /var/www -type f -print0 | xargs -0 chmod 644
 
 #install composer
 RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer
