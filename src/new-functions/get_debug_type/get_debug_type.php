@@ -20,7 +20,7 @@ namespace {
     $fp_stream = tmpfile();
     $fp_closed = fopen(__FILE__, 'r');
 
-    $matching_table = [
+    $correspondence_table = [
         // scalar types
         ['null', null, 'null'],
         ['true', true, 'bool'],
@@ -48,8 +48,8 @@ namespace {
 
     fclose($fp_closed);
 
-    foreach ($matching_table as [$example, $variable, $expected]) {
-        $returned = get_debug_type($variable);
+    foreach ($correspondence_table as [$example, $value, $expected]) {
+        $returned = get_debug_type($value);
 
         if ($expected !== $returned) {
             trigger_error('Expected type "' . $expected . '" for "' . $example. '" doesn\'t match the returned value "' . $returned . '".');
