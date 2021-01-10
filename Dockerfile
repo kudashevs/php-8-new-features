@@ -12,8 +12,9 @@ RUN echo 'web:docker' | chpasswd
 RUN echo "\ncd /var/www/\n" >> /home/web/.bashrc
 
 #set web permissions
-RUN find /var/www -type d -print0 | xargs -0 chmod 755
-RUN find /var/www -type f -print0 | xargs -0 chmod 644
+#comment these two lines if they consume too much time during a build
+RUN find /var/www -type d -print0 | xargs -0 chmod 775
+RUN find /var/www -type f -print0 | xargs -0 chmod 664
 
 #install composer
 RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer
