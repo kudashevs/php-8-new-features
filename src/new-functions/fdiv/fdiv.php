@@ -1,5 +1,8 @@
 <?php
-
+/*
+ * According to IEEE-754 standard on Floating-Point Arithmetic fdiv() function will treat
+ * division by zero as legal operation. It returns NAN or ±INF mandated by IEEE-754.
+ */
 $remainder = fdiv(2, 0);
 
 if (INF === $remainder) {
