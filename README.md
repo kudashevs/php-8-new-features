@@ -29,6 +29,19 @@ More information:
 [[documentation](https://www.php.net/manual/en/language.exceptions.php)]
 [[rfc](https://wiki.php.net/rfc/non-capturing_catches)]
 
+### Stringable interface
+Since PHP 8 any class which implements a __toString() method implements the Stringable interface automatically.
+It allows us easier type-hint types for functions and methods that can accept/return strings.
+
+Additional information:
+- it can be found in get_declared_interfaces() return value
+- a probable disadvantage that it is a little bit magical
+
+More information:  
+[[example](src/improvements/stringable-interface.php)]
+[documentation]
+[[rfc](https://wiki.php.net/rfc/stringable)]
+
 
 ## New functions
 
