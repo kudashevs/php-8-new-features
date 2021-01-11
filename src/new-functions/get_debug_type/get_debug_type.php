@@ -52,7 +52,7 @@ namespace {
         $returned = get_debug_type($value);
 
         if ($expected !== $returned) {
-            trigger_error('Expected type "' . $expected . '" for "' . $example. '" doesn\'t match the returned value "' . $returned . '".');
+            trigger_error('Expected type "' . $expected . '" for "' . $example. '" doesn\'t match the returned value "' . $returned . '".', E_USER_ERROR);
         }
 
         echo $expected . PHP_EOL;
