@@ -22,6 +22,13 @@ More information:
 [[documentation](https://www.php.net/manual/en/language.exceptions.php)]
 [[rfc](https://wiki.php.net/rfc/throw_expression)]
 
+### Non-capturing catches
+Since PHP 8 it's possible catch exceptions only by type without capturing the object.
+More information:  
+[[example](src/improvements/non-capturing-catches.php)]
+[[documentation](https://www.php.net/manual/en/language.exceptions.php)]
+[[rfc](https://wiki.php.net/rfc/non-capturing_catches)]
+
 
 ## New functions
 
