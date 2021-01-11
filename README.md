@@ -37,3 +37,9 @@ More information:
 [[examples](src/new-functions/get_debug_type/)]
 [documentation]
 [[rfc](https://wiki.php.net/rfc/get_debug_type)]
+
+- fdiv() - divides two numbers according to the IEEE-754 standard (floating-point arithmetic).  
+More information:
+[[examples](src/new-functions/fdiv/)]
+[[documentation]](https://www.php.net/manual/en/function.fdiv.php)
+[[pull request](https://github.com/php/php-src/pull/4769)]
