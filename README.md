@@ -15,6 +15,13 @@ More information:
 [[documentation](https://www.php.net/manual/en/language.constants.predefined.php)]
 [[rfc](https://wiki.php.net/rfc/class_name_literal_on_object)]
 
+### `throw` becomes an expression
+Since PHP 8 throw is not longer a statement but an expression.
+More information:
+[[example](src/improvements/object-classname.php)]
+[[documentation](https://www.php.net/manual/en/language.exceptions.php)]
+[[rfc](https://wiki.php.net/rfc/throw_expression)]
+
 
 ## New functions
 
