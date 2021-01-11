@@ -3,8 +3,20 @@
 This repo contains a docker image with PHP 8 on board and new features examples. More information about PHP 8
 new features you can find on [official release page](https://www.php.net/releases/8.0/en.php).
 
+## PHP 8 improvements
 
-# New functions
+### Object classname
+Since PHP 8 it's possible to use magic constant ::class (which returns fully qualified class name) on a class instance:
+```php
+echo $object::class;
+```
+More information:  
+[[example](src/improvements/object-classname.php)]
+[[documentation](https://www.php.net/manual/en/language.constants.predefined.php)]
+[[rfc](https://wiki.php.net/rfc/class_name_literal_on_object)]
+
+
+## New functions
 
 PHP 8 brings us some brand new functions:
 
