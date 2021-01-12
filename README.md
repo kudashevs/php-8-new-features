@@ -64,7 +64,7 @@ PHP 8 allows us to declare and initialize class properties with type and visibil
 method signature. It allows us to write less boilerplate code.   
 
 Additional information:
-- makes code shorter and more readable
+- makes code significantly shorter and therefore more readable
 - removes boilerplate code
 - facilitates an instantiation process
 
