@@ -73,6 +73,20 @@ More information:
 [[documentation](https://www.php.net/manual/en/language.oop5.decon.php#language.oop5.decon.constructor.promotion)]
 [[rfc](https://wiki.php.net/rfc/constructor_promotion)]
 
+### Match expression
+PHP 8 allows us to change the switch statement to more convenient and secure match expression.   
+
+Additional information:
+- it is shorter and more convenient/readable
+- the result could be assigned to a variable or returned
+- uses the strict type-safe comparison (===)
+- match arms do not fall-through to later cases
+
+More information:  
+[[examples](src/new-features/match-expression)]
+[[documentation](https://www.php.net/manual/en/control-structures.match.php)]
+[[rfc](https://wiki.php.net/rfc/match_expression_v2)]
+
 
 ## New functions in PHP 8
 

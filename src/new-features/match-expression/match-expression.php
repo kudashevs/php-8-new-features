@@ -1,0 +1,17 @@
+<?php
+
+$extension = 'jpeg';
+
+$response = match($extension) {
+    'gif' => 'image/gif',
+    'jpg', 'jpeg' => 'image/jpeg',
+    'png' => 'image/png',
+    'svg' => 'image/svg+xml',
+    default => throw new \InvalidArgumentException('Unsupported format ' . $extension. ' was provided')
+};
+
+if ('image/jpeg' === $response) {
+    echo 'The extension was processed as expected.' . PHP_EOL;
+} else {
+    trigger_error('The extension was not processed properly.', E_USER_ERROR);
+}
