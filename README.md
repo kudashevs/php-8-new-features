@@ -3,6 +3,11 @@
 This repo contains a docker image with PHP 8 and some new features examples. More information about PHP 8
 new features you can find on [official release page](https://www.php.net/releases/8.0/en.php).
 
+## Usage
+
+To start using docker containers you need Docker software installed on your computer. More information on 
+how to use a container in [USAGE.md](USAGE.md) or in [Get started](https://docs.docker.com/get-started/).   
+
 ## PHP 8 improvements
 
 ### Object classname
