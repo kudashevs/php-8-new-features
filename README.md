@@ -43,7 +43,23 @@ More information:
 [[rfc](https://wiki.php.net/rfc/stringable)]
 
 
-## New functions
+## New features in PHP 8
+
+### Named arguments
+PHP 8 allows us to pass names for arguments to functions and methods calls. It allows us to provide only
+required parameters in any order we like and skip optional parameters.  
+
+Additional information:
+- makes code shorter and more readable
+- could help to solve inconsistency in some cases
+
+More information:  
+[[examples](src/new-features/named-arguments)]
+[[documentation](https://www.php.net/manual/en/functions.arguments.php)]
+[[rfc](https://wiki.php.net/rfc/named_params)]
+
+
+## New functions in PHP 8
 
 PHP 8 brings us some brand new functions:
 
