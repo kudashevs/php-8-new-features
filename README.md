@@ -59,6 +59,21 @@ More information:
 [[rfc](https://wiki.php.net/rfc/named_params)]
 
 
+### Constructor property promotion
+PHP 8 allows us to declare and initialize class properties with type and visibility right from the class constructor
+method signature. It allows us to write less boilerplate code.   
+
+Additional information:
+- makes code shorter and more readable
+- removes boilerplate code
+- facilitates an instantiation process
+
+More information:  
+[[examples](src/new-features/property-promotion)]
+[[documentation](https://www.php.net/manual/en/language.oop5.decon.php#language.oop5.decon.constructor.promotion)]
+[[rfc](https://wiki.php.net/rfc/constructor_promotion)]
+
+
 ## New functions in PHP 8
 
 PHP 8 brings us some brand new functions:
