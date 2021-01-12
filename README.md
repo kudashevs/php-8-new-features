@@ -15,20 +15,20 @@ Since PHP 8 it's possible to use magic constant ::class (which returns fully qua
 ```php
 echo $object::class;
 ```
-More information:  
+More information:
 [[example](src/improvements/object-classname.php)]
 [[documentation](https://www.php.net/manual/en/language.constants.predefined.php)]
 [[rfc](https://wiki.php.net/rfc/class_name_literal_on_object)]
 
 ### Non-capturing catches
-Since PHP 8 it's possible catch exceptions only by type without capturing the object.
-More information:  
+Since PHP 8 it's possible catch exceptions only by type without capturing the object.  
+More information:
 [[example](src/improvements/non-capturing-catches.php)]
 [[documentation](https://www.php.net/manual/en/language.exceptions.php)]
 [[rfc](https://wiki.php.net/rfc/non-capturing_catches)]
 
 ### `throw` becomes an expression
-Since PHP 8 throw is no longer a statement but an expression.
+Since PHP 8 throw is no longer a statement but an expression.  
 More information:
 [[example](src/improvements/object-classname.php)]
 [[documentation](https://www.php.net/manual/en/language.exceptions.php)]
@@ -42,7 +42,7 @@ Additional information:
 - it can be found in get_declared_interfaces() return value
 - a probable disadvantage that it is a little bit magical
 
-More information:  
+More information:
 [[example](src/improvements/stringable-interface.php)]
 [documentation]
 [[rfc](https://wiki.php.net/rfc/stringable)]
@@ -58,7 +58,7 @@ Additional information:
 - makes code shorter and more readable
 - could help to solve inconsistency in some cases
 
-More information:  
+More information:
 [[examples](src/new-features/named-arguments)]
 [[documentation](https://www.php.net/manual/en/functions.arguments.php)]
 [[rfc](https://wiki.php.net/rfc/named_params)]
@@ -73,7 +73,7 @@ Additional information:
 - removes boilerplate code
 - facilitates an instantiation process
 
-More information:  
+More information:
 [[examples](src/new-features/property-promotion)]
 [[documentation](https://www.php.net/manual/en/language.oop5.decon.php#language.oop5.decon.constructor.promotion)]
 [[rfc](https://wiki.php.net/rfc/constructor_promotion)]
@@ -87,7 +87,7 @@ Additional information:
 - uses the strict type-safe comparison (===)
 - match arms do not fall-through to later cases
 
-More information:  
+More information:
 [[examples](src/new-features/match-expression)]
 [[documentation](https://www.php.net/manual/en/control-structures.match.php)]
 [[rfc](https://wiki.php.net/rfc/match_expression_v2)]
