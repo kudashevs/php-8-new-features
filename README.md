@@ -31,7 +31,7 @@ More information:
 
 ### Stringable interface
 Since PHP 8 any class which implements a __toString() method implements the Stringable interface automatically.
-It allows us easier type-hint types for functions and methods that can accept/return strings.
+It allows us to type-hint easily types for functions and methods that can accept/return strings.
 
 Additional information:
 - it can be found in get_declared_interfaces() return value
