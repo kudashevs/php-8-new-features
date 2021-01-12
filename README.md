@@ -15,19 +15,19 @@ More information:
 [[documentation](https://www.php.net/manual/en/language.constants.predefined.php)]
 [[rfc](https://wiki.php.net/rfc/class_name_literal_on_object)]
 
-### `throw` becomes an expression
-Since PHP 8 throw is not longer a statement but an expression.
-More information:
-[[example](src/improvements/object-classname.php)]
-[[documentation](https://www.php.net/manual/en/language.exceptions.php)]
-[[rfc](https://wiki.php.net/rfc/throw_expression)]
-
 ### Non-capturing catches
 Since PHP 8 it's possible catch exceptions only by type without capturing the object.
 More information:  
 [[example](src/improvements/non-capturing-catches.php)]
 [[documentation](https://www.php.net/manual/en/language.exceptions.php)]
 [[rfc](https://wiki.php.net/rfc/non-capturing_catches)]
+
+### `throw` becomes an expression
+Since PHP 8 throw is not longer a statement but an expression.
+More information:
+[[example](src/improvements/object-classname.php)]
+[[documentation](https://www.php.net/manual/en/language.exceptions.php)]
+[[rfc](https://wiki.php.net/rfc/throw_expression)]
 
 ### Stringable interface
 Since PHP 8 any class which implements a __toString() method implements the Stringable interface automatically.
