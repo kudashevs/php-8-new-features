@@ -1,6 +1,6 @@
 # PHP 8 new features
 
-This repo contains a docker image with PHP 8 on board and new features examples. More information about PHP 8
+This repo contains a docker image with PHP 8 and some new features examples. More information about PHP 8
 new features you can find on [official release page](https://www.php.net/releases/8.0/en.php).
 
 ## PHP 8 improvements
@@ -23,7 +23,7 @@ More information:
 [[rfc](https://wiki.php.net/rfc/non-capturing_catches)]
 
 ### `throw` becomes an expression
-Since PHP 8 throw is not longer a statement but an expression.
+Since PHP 8 throw is no longer a statement but an expression.
 More information:
 [[example](src/improvements/object-classname.php)]
 [[documentation](https://www.php.net/manual/en/language.exceptions.php)]
@@ -46,7 +46,7 @@ More information:
 ## New features in PHP 8
 
 ### Named arguments
-PHP 8 allows us to pass names for arguments to functions and methods calls. It allows us to provide only
+PHP 8 allows us to pass names for arguments to functions and methods calls. It allows us to provide only the
 required parameters in any order we like and skip optional parameters.  
 
 Additional information:
@@ -74,7 +74,7 @@ More information:
 [[rfc](https://wiki.php.net/rfc/constructor_promotion)]
 
 ### Match expression
-PHP 8 allows us to change the switch statement to more convenient and secure match expression.   
+PHP 8 allows us to change the switch statement to more a convenient and secure `match` expression.   
 
 Additional information:
 - it is shorter and more convenient/readable
