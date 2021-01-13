@@ -6,8 +6,8 @@
  */
 try {
     $value = false ?: throw new InvalidArgumentException();
-} catch (InvalidArgumentException $e) {
-    trigger_error($e->getMessage(), E_USER_ERROR);
+} catch (InvalidArgumentException) {
+    die('The exception was thrown as expected because throw is an expression.' . PHP_EOL);
 }
 
-echo 'Exception was not thrown because it is an expression.' . PHP_EOL;
+assert(false, 'The exception was not caught.');
