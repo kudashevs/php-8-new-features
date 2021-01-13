@@ -63,7 +63,6 @@ More information:
 [[documentation](https://www.php.net/manual/en/functions.arguments.php)]
 [[rfc](https://wiki.php.net/rfc/named_params)]
 
-
 ### Constructor property promotion
 PHP 8 allows us to declare and initialize class properties with type and visibility right from the class constructor
 method signature. This allows us writing less boilerplate code.   
@@ -77,6 +76,21 @@ More information:
 [[examples](src/new-features/property-promotion)]
 [[documentation](https://www.php.net/manual/en/language.oop5.decon.php#language.oop5.decon.constructor.promotion)]
 [[rfc](https://wiki.php.net/rfc/constructor_promotion)]
+
+### Union types
+PHP 8 allows us to use multiple different types in type declarations (parameters, properties and return types).
+This allows us using the wide range of types combinations that are validated at runtime.
+
+Additional information:
+- makes code more flexible and secure
+- accepts multiple types including pseudo types
+- allows us chaining build-in and our own types
+- use strict_types to make type-check even stronger
+
+More information:
+[[examples](src/new-features/union-types)]
+[[documentation](https://www.php.net/manual/en/language.types.declarations.php#language.types.declarations.union)]
+[[rfc](https://wiki.php.net/rfc/union_types_v2)]
 
 ### Match expression
 PHP 8 allows us to change the switch statement for a more convenient and secure `match` expression.   
