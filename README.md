@@ -10,8 +10,8 @@ how to use a container in [USAGE.md](USAGE.md) or in [Get started](https://docs.
 
 ## PHP 8 improvements
 
-### Object classname
-Since PHP 8 it's possible to use magic constant ::class (which returns the fully qualified class name) on a class instance:
+### *Object classname*
+Since PHP 8 it's possible to use magic constant `::class` (which returns the fully qualified class name) on a class instance:
 ```php
 echo $object::class;
 ```
@@ -20,22 +20,27 @@ More information:
 [[documentation](https://www.php.net/manual/en/language.constants.predefined.php)]
 [[rfc](https://wiki.php.net/rfc/class_name_literal_on_object)]
 
-### Non-capturing catches
-Since PHP 8 it's possible catch exceptions only by type without capturing the object.  
+
+### *Non-capturing catches*
+Since PHP 8 it's possible catch exceptions only by type without capturing the object.
+
 More information:
 [[example](src/improvements/non-capturing-catches.php)]
 [[documentation](https://www.php.net/manual/en/language.exceptions.php)]
 [[rfc](https://wiki.php.net/rfc/non-capturing_catches)]
 
-### `throw` becomes an expression
-Since PHP 8 throw is no longer a statement but an expression.  
+
+### *`throw` becomes an expression*
+Since PHP 8 `throw` is no longer a statement but an expression.
+
 More information:
 [[example](src/improvements/throw-expression.php)]
 [[documentation](https://www.php.net/manual/en/language.exceptions.php)]
 [[rfc](https://wiki.php.net/rfc/throw_expression)]
 
-### Stringable interface
-Since PHP 8 any class which implements a __toString() method implements the Stringable interface automatically.
+
+### *Stringable interface*
+Since PHP 8 any class which implements a __toString() method implements the `Stringable` interface automatically.
 It allows us to type-hint easily types for functions and methods that can accept/return strings.
 
 Additional information:
@@ -50,7 +55,7 @@ More information:
 
 ## New features in PHP 8
 
-### Named arguments
+### *Named arguments*
 PHP 8 allows us to pass names for functions and methods call arguments. It allows us to provide only the
 required parameters in any order we like and skip optional parameters.  
 
@@ -63,7 +68,7 @@ More information:
 [[documentation](https://www.php.net/manual/en/functions.arguments.php)]
 [[rfc](https://wiki.php.net/rfc/named_params)]
 
-### Constructor property promotion
+### *Constructor property promotion*
 PHP 8 allows us to declare and initialize class properties with type and visibility right from the class constructor
 method signature. This allows us writing less boilerplate code.   
 
@@ -77,7 +82,8 @@ More information:
 [[documentation](https://www.php.net/manual/en/language.oop5.decon.php#language.oop5.decon.constructor.promotion)]
 [[rfc](https://wiki.php.net/rfc/constructor_promotion)]
 
-### Union types
+
+### *Union types*
 PHP 8 allows us to use multiple different types in type declarations (parameters, properties and return types).
 This allows us using the wide range of types combinations that are validated at runtime.
 
@@ -92,7 +98,8 @@ More information:
 [[documentation](https://www.php.net/manual/en/language.types.declarations.php#language.types.declarations.union)]
 [[rfc](https://wiki.php.net/rfc/union_types_v2)]
 
-### Match expression
+
+### *Match expression*
 PHP 8 allows us to change the switch statement for a more convenient and secure `match` expression.   
 
 Additional information:
