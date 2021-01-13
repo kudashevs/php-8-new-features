@@ -23,7 +23,13 @@ More information:
 
 ### *Non-capturing catches*
 Since PHP 8 it's possible catch exceptions only by type without capturing the object.
-
+```php
+try {
+    /* do something */
+} catch (SpecificException) {
+    echo "A SpecificException was thrown.";
+}
+```  
 More information:
 [[example](src/improvements/non-capturing-catches.php)]
 [[documentation](https://www.php.net/manual/en/language.exceptions.php)]
@@ -32,7 +38,9 @@ More information:
 
 ### *`throw` becomes an expression*
 Since PHP 8 `throw` is no longer a statement but an expression.
-
+```php
+$value = $nullable ?? throw new SpecificException();
+```
 More information:
 [[example](src/improvements/throw-expression.php)]
 [[documentation](https://www.php.net/manual/en/language.exceptions.php)]
@@ -58,7 +66,10 @@ More information:
 ### *Named arguments*
 PHP 8 allows us to pass names for functions and methods call arguments. It allows us to provide only the
 required parameters in any order we like and skip optional parameters.  
-
+```php
+explode(separator: ' ', string: 'a b');
+explode(string: 'a b', separator: ' ');
+```
 Additional information:
 - makes code shorter and more readable
 - could help to solve inconsistency in some cases
@@ -72,7 +83,12 @@ More information:
 ### *Constructor property promotion*
 PHP 8 allows us to declare and initialize class properties with specific type and visibility right from the class
 constructor method signature. This allows us writing less boilerplate code.   
-
+```php
+class Test {
+    public function __construct(protected int $x = 0, protected int $y = 0) {
+    }
+}
+```
 Additional information:
 - makes code significantly shorter and therefore more readable
 - removes boilerplate code
@@ -87,7 +103,12 @@ More information:
 ### *Union types*
 PHP 8 allows us to mix multiple different types in type declarations (parameters, properties and return types).
 This allows us using the wide range of types combinations that are validated at runtime.
-
+```php
+function doSomething(int|float|string|Stringable|null $input): string|null
+{
+    /* process $input */
+}
+```
 Additional information:
 - makes code more flexible and secure
 - accepts multiple types including pseudo types
@@ -103,7 +124,11 @@ More information:
 
 ### *Match expression*
 PHP 8 allows us to change the switch statement for a more convenient and secure `match` expression.   
-
+```php
+$result = match($condition) {
+    /* process $condition */
+}
+```
 Additional information:
 - match is shorter and more convenient/readable
 - the result could be assigned to a variable or returned
