@@ -23,8 +23,9 @@ $title = 'New video';
 $duration = 4264;
 $video = new Video($title, $duration);
 
-if ($title === $video->getTitle() && $duration === $video->getRawDuration()) {
-    echo 'The parameters were set as expected.' . PHP_EOL;
-} else {
-    trigger_error('The parameters were not processed properly.', E_USER_ERROR);
-}
+assert(
+    $title === $video->getTitle() && $duration === $video->getRawDuration(),
+    'The parameters were not processed properly.'
+);
+
+echo 'The parameters were set as expected.' . PHP_EOL;
