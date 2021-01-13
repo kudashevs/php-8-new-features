@@ -9,7 +9,7 @@ if (false === file_exists(DUMMY_FILE)) {
 $fileHandler = fopen(DUMMY_FILE, 'rb');
 $resourceId = get_resource_id($fileHandler);
 
-echo 'handle: ' . get_resource_id($handle) . PHP_EOL;
+assert(is_int($resourceId), 'Unexpected handler was returned.');
 
 echo 'The resource id is ' . $resourceId . '.' . PHP_EOL;
 
