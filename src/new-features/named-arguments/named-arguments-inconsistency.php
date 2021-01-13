@@ -1,6 +1,6 @@
 <?php
 /**
- * Artificial example on how to solve array functions inconsistency with named arguments.
+ * An artificial example on how to solve array functions inconsistency with named arguments.
  */
 $sequence = [
     1, 2, 3, 4, 5
