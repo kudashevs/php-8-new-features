@@ -1,9 +1,11 @@
 <?php
 
-class Foo
+namespace Foo;
+
+class Bar
 {
 }
 
-$obj = new Foo();
+$object = new Bar();
 
-echo 'Object\'s class name is ' . $obj::class . '.' . PHP_EOL;
+echo 'Object\'s class name is "' . $object::class . '".' . PHP_EOL;
