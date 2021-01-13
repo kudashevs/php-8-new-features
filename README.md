@@ -111,6 +111,12 @@ More information:
 
 PHP 8 brings us some brand new functions:
 
+- fdiv() - divides two numbers according to the IEEE-754 standard (floating-point arithmetic).  
+More information:
+[[examples](src/new-functions/fdiv/)]
+[[documentation]](https://www.php.net/manual/en/function.fdiv.php)
+[[pull request](https://github.com/php/php-src/pull/4769)]
+
 - str_contains() - determines if a string contains a given substring (case-sensitive).  
 More information:
 [[examples](src/new-functions/str_functions/)]
@@ -141,8 +147,3 @@ More information:
 [documentation]
 [[rfc](https://wiki.php.net/rfc/get_debug_type)]
 
-- fdiv() - divides two numbers according to the IEEE-754 standard (floating-point arithmetic).  
-More information:
-[[examples](src/new-functions/fdiv/)]
-[[documentation]](https://www.php.net/manual/en/function.fdiv.php)
-[[pull request](https://github.com/php/php-src/pull/4769)]
