@@ -10,8 +10,9 @@ $imageType = match($extension) {
     default => throw new \InvalidArgumentException('Unsupported format ' . $extension. ' was provided')
 };
 
-if ('image/jpeg' === $imageType) {
-    echo 'The extension was processed as expected.' . PHP_EOL;
-} else {
-    trigger_error('The extension was not processed properly.', E_USER_ERROR);
-}
+assert(
+    'image/jpeg' === $imageType,
+    'The extension was not processed properly.'
+);
+
+echo 'The extension was processed as expected.' . PHP_EOL;
