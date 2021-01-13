@@ -1,10 +1,10 @@
 <?php
 
 $haystack = 'the quick brown fox jumps over the lazy dog';
-$needle_at_the_start = 'the';
+$needleAtTheStart = 'the';
 
-$found = str_starts_with($haystack, $needle_at_the_start);
+$found = str_starts_with($haystack, $needleAtTheStart);
 
-assert(true === $found, 'Needle "' . $needle_at_the_start . '"" must exist at the beginning of the haystack.');
+assert(true === $found, 'Needle "' . $needleAtTheStart . '"" must exist at the beginning of the haystack.');
 
-echo 'Needle "' . $needle_at_the_start . '" was found at the beginning of the haystack.' . PHP_EOL;
+echo 'Needle "' . $needleAtTheStart . '" was found at the beginning of the haystack.' . PHP_EOL;
