@@ -20,7 +20,7 @@ namespace {
     $fp_stream = tmpfile();
     $fp_closed = fopen(__FILE__, 'r');
 
-    $correspondence_table = [
+    $tableOfCorrespondences = [
         // scalar types
         ['null', null, 'null'],
         ['true', true, 'bool'],
@@ -48,7 +48,7 @@ namespace {
 
     fclose($fp_closed);
 
-    foreach ($correspondence_table as [$example, $value, $expected]) {
+    foreach ($tableOfCorrespondences as [$example, $value, $expected]) {
         $returned = get_debug_type($value);
 
         if ($expected !== $returned) {
