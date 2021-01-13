@@ -14,8 +14,6 @@ class Foo
     }
 
     /**
-     * @param string $state
-     * @param string $secret
      * @throws AccessDeniedException
      */
     public function setState(string $state, string $secret = '')
@@ -23,13 +21,13 @@ class Foo
         if ($secret !== 'secret') {
             throw new AccessDeniedException();
         }
+
         $this->state = $state;
     }
 }
 
 try {
-    $foo = new Foo();
-    $foo->setState('baz');
+    (new Foo())->setState('baz');
 } catch (AccessDeniedException) {
     die('You don\'t know the secret word.' . PHP_EOL);
 }
