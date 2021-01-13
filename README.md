@@ -66,7 +66,7 @@ More information:
 
 ### Constructor property promotion
 PHP 8 allows us to declare and initialize class properties with type and visibility right from the class constructor
-method signature. It allows us to write less boilerplate code.   
+method signature. This allows us writing less boilerplate code.   
 
 Additional information:
 - makes code significantly shorter and therefore more readable
