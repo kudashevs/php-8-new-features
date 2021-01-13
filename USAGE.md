@@ -17,14 +17,14 @@ Clone this repo to your local computer then build an image:
 docker build -t php-8-new-features .
 ```
 
-## Run the container
+## Run a container
 
-After the image is ready start a container:
+After the image is ready you can start a container (you are free to choose any name you like after `--name` option):
 ```bash
 docker run --rm --name php8 -d php-8-new-features
 ```
 
-Then you can use container under the name `php8` (e.g. to get PHP version type):
+After the container has started you can use it under the name chosen in the previous step (in our case it is `php8`):
 ```bash
 docker exec -it php8 /usr/local/bin/php -v
 ```
