@@ -1,6 +1,6 @@
 <?php
 /*
- * On PHP versions lower than 8.0 this code will produce an error:
+ * On PHP version lower than 8.0 this code will produce an error:
  * Parse error: syntax error, unexpected '=>' (T_DOUBLE_ARROW)
  * because throw is a statement and not an expression.
  */
