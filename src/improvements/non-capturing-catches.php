@@ -29,7 +29,7 @@ class Foo
 try {
     (new Foo())->setState('baz');
 } catch (AccessDeniedException) {
-    die('You don\'t know the secret word.' . PHP_EOL);
+    die('The exception was caught as expected.' . PHP_EOL);
 }
 
 trigger_error('The AccessDeniedException was not caught.', E_USER_ERROR);
