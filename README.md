@@ -51,7 +51,7 @@ More information:
 ## New features in PHP 8
 
 ### Named arguments
-PHP 8 allows us to pass names for arguments to functions and methods calls. It allows us to provide only the
+PHP 8 allows us to pass names for functions and methods call arguments. It allows us to provide only the
 required parameters in any order we like and skip optional parameters.  
 
 Additional information:
