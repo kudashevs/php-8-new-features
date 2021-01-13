@@ -32,4 +32,4 @@ try {
     die('The exception was caught as expected.' . PHP_EOL);
 }
 
-trigger_error('The AccessDeniedException was not caught.', E_USER_ERROR);
+assert(false, 'The exception was not caught.');
