@@ -79,10 +79,10 @@ More information:
 [[rfc](https://wiki.php.net/rfc/constructor_promotion)]
 
 ### Match expression
-PHP 8 allows us to change the switch statement to more a convenient and secure `match` expression.   
+PHP 8 allows us to change the switch statement for a more convenient and secure `match` expression.   
 
 Additional information:
-- it is shorter and more convenient/readable
+- match is shorter and more convenient/readable
 - the result could be assigned to a variable or returned
 - uses the strict type-safe comparison (===)
 - match arms do not fall-through to later cases
