@@ -31,8 +31,8 @@ docker exec -it php8 /usr/local/bin/php -v
 
 ## Usage
 
-The recommended usage is through SSH connection. The ssh server is already set up inside the image and
-is available for use on the port 22/tcp. To make a connection available you should map the port on your computer
+The recommended usage is through an SSH connection. The ssh server is already set up inside the image and
+is available for use on port 22/tcp. To make a connection available you should map the port on your computer
 with the port in the container:
 ```bash
 docker run --rm -p 2020:22 --name php8 -d php-8-new-features
