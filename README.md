@@ -11,7 +11,7 @@ how to use a container in [USAGE.md](USAGE.md) or in [Get started](https://docs.
 ## PHP 8 improvements
 
 ### Object classname
-Since PHP 8 it's possible to use magic constant ::class (which returns fully qualified class name) on a class instance:
+Since PHP 8 it's possible to use magic constant ::class (which returns the fully qualified class name) on a class instance:
 ```php
 echo $object::class;
 ```
