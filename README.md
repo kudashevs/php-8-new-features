@@ -41,7 +41,7 @@ More information:
 
 ### *Stringable interface*
 Since PHP 8 any class which implements a __toString() method implements the `Stringable` interface automatically.
-It allows us to type-hint easily types for functions and methods that can accept/return strings.
+It allows us to type-hint easily the types for functions and methods that can accept/return strings.
 
 Additional information:
 - it can be found in get_declared_interfaces() return value
@@ -68,9 +68,10 @@ More information:
 [[documentation](https://www.php.net/manual/en/functions.arguments.php)]
 [[rfc](https://wiki.php.net/rfc/named_params)]
 
+
 ### *Constructor property promotion*
-PHP 8 allows us to declare and initialize class properties with type and visibility right from the class constructor
-method signature. This allows us writing less boilerplate code.   
+PHP 8 allows us to declare and initialize class properties with specific type and visibility right from the class
+constructor method signature. This allows us writing less boilerplate code.   
 
 Additional information:
 - makes code significantly shorter and therefore more readable
