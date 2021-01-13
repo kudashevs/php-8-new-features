@@ -85,7 +85,7 @@ More information:
 
 
 ### *Union types*
-PHP 8 allows us to use multiple different types in type declarations (parameters, properties and return types).
+PHP 8 allows us to mix multiple different types in type declarations (parameters, properties and return types).
 This allows us using the wide range of types combinations that are validated at runtime.
 
 Additional information:
@@ -93,6 +93,7 @@ Additional information:
 - accepts multiple types including pseudo types
 - allows us chaining build-in and our own types
 - use strict_types to make type-check even stronger
+- caution: `null` cannot be used as a standalone type
 
 More information:
 [[examples](src/new-features/union-types)]
