@@ -33,14 +33,10 @@ namespace {
         ['new stdClass()', new stdClass(), 'stdClass'],
         ['new Bar()', new Bar(), 'Bar'],
         ['new Demo\Foo()', new Demo\Foo(), 'Demo\Foo'],
-        ['new class {}', new class {
-        }, 'class@anonymous'],
-        ['new class implements Bar {}', new class extends Bar {
-        }, 'Bar@anonymous'],
-        ['new class implements Baz {}', new class implements Baz {
-        }, 'Baz@anonymous'],
-        ['function () {}', function () {
-        }, 'Closure'],
+        ['new class {}', new class {}, 'class@anonymous'],
+        ['new class implements Bar {}', new class extends Bar {}, 'Bar@anonymous'],
+        ['new class implements Baz {}', new class implements Baz {}, 'Baz@anonymous'],
+        ['function () {}', function () {}, 'Closure'],
         // resources
         ['tmpfile()', $fp_stream, 'resource (stream)'],
         ['fopen(__FILE__, \'r\')', $fp_closed, 'resource (closed)'],
