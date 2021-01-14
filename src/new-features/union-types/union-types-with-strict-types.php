@@ -1,8 +1,8 @@
 <?php declare(strict_types=1);
 /**
- * An artificial example on how union types work with set on strict_type declaration.
+ * An artificial example on how union types work with the strict_type declaration set to on.
  * The purpose of this example is to show that the function accepts only declared values.
- * To catch the difference see the union-types-without-strict-types.php example.
+ * To understand the difference see the union-types-without-strict-types.php example.
  */
 function printStringsAndIntegers(string|int $value)
 {
