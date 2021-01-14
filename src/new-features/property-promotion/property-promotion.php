@@ -1,5 +1,7 @@
 <?php
-
+/**
+ * An artificial example on how to use constructor property promotion including default value example.
+ */
 class Video
 {
     public function __construct(protected string $title, protected int $duration, protected int $status = 1)
