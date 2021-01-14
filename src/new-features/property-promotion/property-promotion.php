@@ -23,9 +23,7 @@ $title = 'New video';
 $duration = 4264;
 $video = new Video($title, $duration);
 
-assert(
-    $title === $video->getTitle() && $duration === $video->getRawDuration(),
-    'The parameters were not processed properly.'
-);
+assert($title === $video->getTitle(), 'The title property was not set as expected.');
+assert($duration === $video->getRawDuration(),'The duration property was not set as expected.');
 
-echo 'The parameters were set as expected.' . PHP_EOL;
+echo 'The parameters of the ' . $video::class . ' object were set as expected.' . PHP_EOL;
