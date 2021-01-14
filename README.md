@@ -122,6 +122,24 @@ More information:
 [[rfc](https://wiki.php.net/rfc/union_types_v2)]
 
 
+### *Nullsafe operator*
+PHP 8 allows us to safely chain method calls/properties when the return value could be `null`. Instead of writing 
+a sequence of null check conditionals we can use the brand new nullsafe operator `?->` at any place of the chain.
+```php
+return $car->getEngine()?->getOilFilter()?->getManufacturer()?->name;
+```
+Additional information:
+- makes code more secure and reliable
+- could be applied at any place of the chain
+- stops if encounters `null` without any errors  
+and evaluates the entire chain to `null` value
+
+More information:
+[[examples](src/new-features/nullsafe-operator)]
+[documentation]
+[[rfc](https://wiki.php.net/rfc/nullsafe_operator)]
+
+
 ### *Match expression*
 PHP 8 allows us to change the switch statement for a more convenient and secure `match` expression.   
 ```php
