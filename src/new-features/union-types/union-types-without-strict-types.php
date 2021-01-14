@@ -1,7 +1,7 @@
 <?php declare(strict_types=0);
 /**
- * An artificial example on how union types work with set off strict_type declaration.
- * The purpose of this example is to show the weak point of disabling strict_types.
+ * An artificial example on how union types work with the strict_type declaration set to off.
+ * The purpose of this example is to show the weak point of disabling strict_types declaration.
  * Despite of declared union types for the parameter the function accepts an float value.
  */
 function printStringsAndIntegers(string|int $value)
