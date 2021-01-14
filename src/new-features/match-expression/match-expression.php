@@ -1,5 +1,7 @@
 <?php
-
+/**
+ * An artificial example on how to use the match operator with predefined default behavior.
+ */
 $extension = 'jpeg';
 
 $imageType = match($extension) {
