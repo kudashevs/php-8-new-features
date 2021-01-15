@@ -1,7 +1,9 @@
 # PHP 8 new features
 
-This repo contains a docker image with PHP 8 and some new features examples. More information about PHP 8
-new features you can find on [official release page](https://www.php.net/releases/8.0/en.php).
+This repo contains a list of PHP 8 new features, as well as their usage examples. More information about PHP 8
+new features you can find on [the official release page](https://www.php.net/releases/8.0/en.php). Also, the repo
+contains a Dockerfile that allows you to build a PHP 8 image with all these examples (it gives you the possibility
+to get familiar with the latest changes in PHP 8 and how they work, without installing it on your computer). 
 
 ## Usage
 
