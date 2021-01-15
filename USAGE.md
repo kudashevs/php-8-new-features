@@ -1,6 +1,6 @@
 # Usage
 
-## Prerequisites
+### Prerequisites
 
 - Windows:
   - [Docker Desktop](https://hub.docker.com/editions/community/docker-ce-desktop-windows)
@@ -29,16 +29,16 @@ After the container has started you can use it under the name chosen in the prev
 docker exec -it php8 /usr/local/bin/php -v
 ```
 
-## Usage
+## Recommended usage
 
-The recommended usage is through an SSH connection. The ssh server is already set up inside the image and
-is available for use on port 22/tcp. To make a connection available you should map the port on your computer
-with the port in the container:
+The most convenient way of using the PHP 8 container is with an IDE through an SSH connection. The ssh server
+is already set up inside the image and is available for use on port 22/tcp. To make a connection available for
+your local computer you should map your computer's port with the port inside the container:
 ```bash
 docker run --rm -p 2020:22 --name php8 -d php-8-new-features
 ``` 
 
-Then the container has started you could use any ssh client to connect to the container:
+Then the container has started you can use any ssh client to connect to the container:
 ```code
 SSH host: localhost
 SSH port: 2020
@@ -46,4 +46,4 @@ SSH user: web
 SSH password: docker 
 ```
 
-Fill free to configure your favorite IDE to use this SSH connection (usually Deployment section). 
+We recommend to configure your favorite IDE to use this SSH connection (usually Deployment section). 
