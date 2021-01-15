@@ -12,8 +12,10 @@ to get familiar with the latest changes in PHP 8 and how they work, without inst
 
 ## Usage
 
-To start using docker containers you need Docker software installed on your computer. More information on 
-how to use a container in [USAGE.md](USAGE.md) or in [Get started](https://docs.docker.com/get-started/).   
+This repo contains a Dockerfile that allows you build a PHP 8 image with all its code. To build an image you need
+Docker software installed on your computer. For more information on how to build and use the container from this repo,
+please refer to the documentation in [USAGE.md](USAGE.md). For more information on how to use the Docker software,
+please refer to [docker docs](https://docs.docker.com) site and [Get started](https://docs.docker.com/get-started/) section.   
 
 ## PHP 8 improvements
 
