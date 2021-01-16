@@ -159,9 +159,10 @@ $result = match($condition) {
 ```
 Additional information:
 - match is shorter and more convenient/readable
-- the result could be assigned to a variable or returned
 - uses the strict type-safe comparison (===)
+- the result could be assigned to a variable or returned
 - match arms do not fall-through to later cases
+- throws \UnhandledMatchError if a default is not found
 
 More information:
 [[examples](src/new-features/match-expression)]
