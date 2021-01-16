@@ -5,10 +5,8 @@
 $extension = 'jpeg';
 
 $imageType = match($extension) {
-    'gif' => 'image/gif',
     'jpg', 'jpeg' => 'image/jpeg',
     'png' => 'image/png',
-    'svg' => 'image/svg+xml',
     default => throw new \InvalidArgumentException('Unsupported format ' . $extension. ' was provided')
 };
 
