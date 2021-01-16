@@ -1,6 +1,9 @@
 <?php
 /**
- * An artificial example on how to use the match operator with predefined default behavior.
+ * An artificial example of how to use the match expression with a predefined default arm.
+ * The match expression gives the possibility to return a default value or throw an exception
+ * of any type as a default behavior. If the default case is not defined the match expression
+ * will throw UnhandledMatchError exception, which can be caught and processed.
  */
 $extension = 'jpeg';
 
