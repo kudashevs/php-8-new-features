@@ -3,7 +3,7 @@
 This repo contains a list of PHP 8 new features, as well as their usage examples. More information about PHP 8
 new features you can find on [the official release page](https://www.php.net/releases/8.0/en.php). Also, the repo
 contains a Dockerfile that allows you to build a PHP 8 image with all these examples (it gives you the possibility
-to get familiar with the latest changes in PHP 8 and how they work, without installing it on your computer). 
+to get familiar with the latest changes in PHP 8 and how they work without installing it on your computer). 
 
 ### Table of Contents  
 [Usage](#usage)  
@@ -14,14 +14,14 @@ to get familiar with the latest changes in PHP 8 and how they work, without inst
 ## Usage
 
 This repo contains a Dockerfile that allows you build a PHP 8 image with all its code. To build an image you need
-Docker software installed on your computer. For more information on how to build and use the container from this repo,
+Docker software to be installed on your computer. For more information on how to build and use the container from this repo,
 please refer to the documentation in [USAGE.md](USAGE.md). For more information on how to use the Docker software,
 please refer to [docker docs](https://docs.docker.com) site and [Get started](https://docs.docker.com/get-started/) section.   
 
 ## PHP 8 improvements
 
 ### *Object classname*
-Since PHP 8 it's possible to use magic constant `::class` (which returns the fully qualified class name) on a class instance:
+Since PHP 8 it is possible to use magic constant `::class` (which returns the fully qualified class name) on a class instance:
 ```php
 echo $object::class;
 ```
@@ -32,7 +32,7 @@ More information:
 
 
 ### *Non-capturing catches*
-Since PHP 8 it's possible catch exceptions only by type without capturing the object.
+Since PHP 8 it is possible to catch exceptions only by their type without capturing the object.
 ```php
 try {
     /* do something */
@@ -74,15 +74,15 @@ More information:
 ## New features in PHP 8
 
 ### *Named arguments*
-PHP 8 allows us to pass names for functions and methods call arguments. It allows us to provide only the
-required parameters in any order we like and skip optional parameters.  
+PHP 8 allows us to pass special names/identifiers for functions and methods arguments. This gives us the possibility
+to provide only the required parameters in any order we like and skip optional parameters.  
 ```php
 explode(separator: ' ', string: 'a b');
 explode(string: 'a b', separator: ' ');
 ```
 Additional information:
 - makes code shorter and more readable
-- could help to solve inconsistency in some cases
+- helps to solve the inconsistency in some cases
 
 More information:
 [[examples](src/new-features/named-arguments)]
@@ -92,7 +92,7 @@ More information:
 
 ### *Constructor property promotion*
 PHP 8 allows us to declare and initialize class properties with specific type and visibility right from the class
-constructor method signature. This allows us writing less boilerplate code.   
+constructor method signature. This gives us the possibility to write less boilerplate code.   
 ```php
 class Test {
     public function __construct(protected int $x = 0, protected int $y = 0) {
@@ -112,7 +112,7 @@ More information:
 
 ### *Union types*
 PHP 8 allows us to mix multiple different types in type declarations (parameters, properties and return types).
-This allows us using the wide range of types combinations that are validated at runtime.
+This gives us the possibility of using the wide range of types combinations that are validated at runtime.
 ```php
 function doSomething(int|float|string|Stringable|null $input): string|null
 {
@@ -124,7 +124,7 @@ Additional information:
 - accepts multiple types including pseudo types
 - allows us chaining build-in and our own types
 - use strict_types to make type-check even stronger
-- caution: `null` cannot be used as a standalone type
+- **caution:** `null` cannot be used as a standalone type
 
 More information:
 [[examples](src/new-features/union-types)]
@@ -172,7 +172,7 @@ More information:
 
 ## New functions in PHP 8
 
-PHP 8 brings us some brand new functions:
+PHP 8 brings us some brand-new functions:
 
 - fdiv() - divides two numbers according to the IEEE-754 standard (floating-point arithmetic).  
 More information:
