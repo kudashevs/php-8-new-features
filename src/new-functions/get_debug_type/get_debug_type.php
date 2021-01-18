@@ -17,6 +17,9 @@ namespace {
     {
     }
 
+    $std = new stdClass();
+    $ref = &$std;
+
     $fp_stream = tmpfile();
     $fp_closed = fopen(__FILE__, 'r');
 
@@ -30,7 +33,8 @@ namespace {
         ['foo', 'foo', 'string'],
         ['[1, 2]', [1, 2], 'array'],
         // classes and  objects
-        ['new stdClass()', new stdClass(), 'stdClass'],
+        ['new stdClass()', $std, 'stdClass'],
+        ['reference', $ref, 'stdClass'],
         ['new Bar()', new Bar(), 'Bar'],
         ['new Demo\Foo()', new Demo\Foo(), 'Demo\Foo'],
         ['new class {}', new class {}, 'class@anonymous'],
