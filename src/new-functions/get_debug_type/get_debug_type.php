@@ -23,6 +23,12 @@ namespace {
     $fh_stream = tmpfile();
     $fh_closed = fopen(__FILE__, 'r');
 
+    $image = imagecreate(1, 1);
+    /*
+     * From PHP 8 the GD extension returns \GdImage object instead of resource.
+     */
+    assert(is_resource($image) || is_a($image, \GdImage::class), 'The GD image library does not work properly.');
+
     $tableOfCorrespondences = [
         // scalar types
         ['null', null, 'null'],
@@ -41,6 +47,7 @@ namespace {
         ['new class implements Bar {}', new class extends Bar {}, 'Bar@anonymous'],
         ['new class implements Baz {}', new class implements Baz {}, 'Baz@anonymous'],
         ['function () {}', function () {}, 'Closure'],
+        ['imagecreate()', $image, 'GdImage'],
         // resources
         ['tmpfile()', $fh_stream, 'resource (stream)'],
         ['fopen(__FILE__, \'r\')', $fh_closed, 'resource (closed)'],
@@ -59,5 +66,9 @@ namespace {
         echo $expected . PHP_EOL;
     }
 
+    /*
+     * From PHP 8 the imagedestroy() function does nothing.
+     */
+    unset($image);
     fclose($fh_stream);
 }
