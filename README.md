@@ -57,18 +57,15 @@ More information:
 [[rfc](https://wiki.php.net/rfc/throw_expression)]
 
 
-### *Stringable interface*
-Since PHP 8 any class which implements a __toString() method implements the `Stringable` interface automatically.
-It allows us to type-hint easily the types for functions and methods that can accept/return strings.
-
-Additional information:
-- it can be found in get_declared_interfaces() return value
-- a probable disadvantage that it is a little bit magical
+### New `mixed` type
+Since PHP 8 it is possible to use the `mixed` type which is equivalent to the union type declaration  
+array|bool|callable|int|float|object|resource|string|null. The `mixed` type can be used for type-hinting
+a return type, functions or methods arguments or a property type.
 
 More information:
-[[example](src/improvements/stringable-interface.php)]
-[documentation]
-[[rfc](https://wiki.php.net/rfc/stringable)]
+[[example](src/improvements/mixed-type.php)]
+[[documentation](https://www.php.net/manual/en/language.types.declarations.php)]
+[[rfc](https://wiki.php.net/rfc/mixed_type_v2)]
 
 
 ## New features in PHP 8
