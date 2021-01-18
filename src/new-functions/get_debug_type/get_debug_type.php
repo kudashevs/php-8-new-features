@@ -20,8 +20,8 @@ namespace {
     $std = new stdClass();
     $ref = &$std;
 
-    $fp_stream = tmpfile();
-    $fp_closed = fopen(__FILE__, 'r');
+    $fh_stream = tmpfile();
+    $fh_closed = fopen(__FILE__, 'r');
 
     $tableOfCorrespondences = [
         // scalar types
@@ -42,11 +42,11 @@ namespace {
         ['new class implements Baz {}', new class implements Baz {}, 'Baz@anonymous'],
         ['function () {}', function () {}, 'Closure'],
         // resources
-        ['tmpfile()', $fp_stream, 'resource (stream)'],
-        ['fopen(__FILE__, \'r\')', $fp_closed, 'resource (closed)'],
+        ['tmpfile()', $fh_stream, 'resource (stream)'],
+        ['fopen(__FILE__, \'r\')', $fh_closed, 'resource (closed)'],
     ];
 
-    fclose($fp_closed);
+    fclose($fh_closed);
 
     foreach ($tableOfCorrespondences as [$example, $value, $expected]) {
         $returned = get_debug_type($value);
@@ -59,5 +59,5 @@ namespace {
         echo $expected . PHP_EOL;
     }
 
-    fclose($fp_stream);
+    fclose($fh_stream);
 }
