@@ -2,7 +2,7 @@
 
 class Foo
 {
-    private $data = 'data';
+    private string $data = 'private data';
 
     public function __toString(): string
     {
@@ -13,7 +13,8 @@ class Foo
 $objectImplementingToString = new Foo();
 
 /*
- * Any class which implements the __toString() method implements the Stringable interface automatically.
+ * Any class which implements the __toString() method will implement the Stringable interface automatically.
+ * The easiest way to find whether an object implements \Stringable interface is to use class_implements() function.
  */
 assert(
     in_array('Stringable', class_implements($objectImplementingToString), true),
