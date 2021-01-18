@@ -177,8 +177,10 @@ Since PHP 8 any class which implements a __toString() method implements the `Str
 It allows us to type-hint the input data for functions and methods that can accept/return strings.
 
 Additional information:
-- it can be found in get_declared_interfaces() return value
-- cannot ???? when strict_types is on
+- can be automatically implemented or explicitly declared 
+- can be treated as a string when declare('strict_types') is off
+- cannot be treated as a string when declare('strict_types') is on
+- can be found in the get_declared_interfaces() return array
 - a probable disadvantage that it is a little bit magical
 
 More information:
