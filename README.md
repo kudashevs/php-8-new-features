@@ -170,6 +170,21 @@ More information:
 [[rfc](https://wiki.php.net/rfc/match_expression_v2)]
 
 
+### *Stringable interface*
+Since PHP 8 any class which implements a __toString() method implements the `Stringable` interface automatically.
+It allows us to type-hint the input data for functions and methods that can accept/return strings.
+
+Additional information:
+- it can be found in get_declared_interfaces() return value
+- cannot ???? when strict_types is on
+- a probable disadvantage that it is a little bit magical
+
+More information:
+[[example](src/new-features/stringable-interface/stringable-interface.php)]
+[documentation]
+[[rfc](https://wiki.php.net/rfc/stringable)]
+
+
 ## New functions in PHP 8
 
 PHP 8 brings us some brand-new functions:
