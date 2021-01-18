@@ -61,7 +61,12 @@ More information:
 Since PHP 8 it is possible to use the `mixed` type which is equivalent to the union type declaration  
 array|bool|callable|int|float|object|resource|string|null. The `mixed` type can be used for type-hinting
 a return type, functions or methods arguments or a property type.
-
+```php
+function doSomething(mixed $input): mixed 
+{
+    /* process $input */
+}
+```
 More information:
 [[example](src/improvements/mixed-type.php)]
 [[documentation](https://www.php.net/manual/en/language.types.declarations.php)]
