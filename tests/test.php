@@ -22,5 +22,5 @@ if ($executed !== count($files)) {
     exit(1);
 }
 
-echo 'All example files were executed successfully.' . PHP_EOL;
+echo 'All ' . $executed . ' example files were successfully executed.' . PHP_EOL;
 exit(0);
