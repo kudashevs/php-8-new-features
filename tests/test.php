@@ -9,6 +9,7 @@ foreach ($files as $file) {
     exec('php ' . $file, $output, $code);
 
     if ($code !== 0) {
+        echo 'File ' . $file . ' stopped execution with error ' . $code . '.' . PHP_EOL;
         exit(1);
     }
 }
