@@ -1,0 +1,12 @@
+language: php
+
+services:
+  - docker
+
+install:
+  - docker build -t php-8-new-features .
+  - docker run -d --rm --name php8 php-8-new-features
+
+script:
+  - docker ps | grep -q php-8-new-features
+  - docker exec -it php8 php tests/test.php
