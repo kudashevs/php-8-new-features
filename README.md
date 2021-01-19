@@ -1,4 +1,4 @@
-# PHP 8 new features
+# PHP 8 new features [![Build Status](https://www.travis-ci.org/kudashevs/php-8-new-features.svg?branch=master)](https://www.travis-ci.org/kudashevs/php-8-new-features)
 
 This repo contains a list of PHP 8 new features, as well as their usage examples. More information about PHP 8
 new features you can find on [the official release page](https://www.php.net/releases/8.0/en.php). Also, the repo
