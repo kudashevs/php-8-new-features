@@ -8,11 +8,6 @@ class Foo
 {
     private $state = 'state';
 
-    public function getState(): string
-    {
-        return $this->state;
-    }
-
     /**
      * @throws AccessDeniedException
      */
