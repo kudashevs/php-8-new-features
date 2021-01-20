@@ -170,6 +170,25 @@ More information:
 [[rfc](https://wiki.php.net/rfc/nullsafe_operator)]
 
 
+### *WeakMap class*
+PHP 8 introduces a new WeakMap class that works similar to the splObjectStorage (allows associate arbitrary value
+with object key), but does not prevent the garbage collector from collecting the object key  when it should be removed.
+```php
+$map = new WeakMap();
+$obj = new stdClass();
+$map[$obj] = 42;
+```
+Additional information:
+- a brand new build-in array like class
+- does not prevent the GC to collect an object 
+- suits perfectly for self-cleaning cache
+
+More information:
+[[examples](src/new-features/weakmaps)]
+[documentation]
+[[rfc](https://wiki.php.net/rfc/weak_maps)]
+
+
 ### *Match expression*
 PHP 8 allows us to change the switch statement for a more convenient and secure `match` expression.   
 ```php
