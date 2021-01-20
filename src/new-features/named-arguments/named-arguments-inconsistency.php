@@ -10,6 +10,6 @@ $mapped = array_map(array: $sequence, callback: fn($v) => $v * 3);
 
 $filtered = array_filter(array: $mapped, callback: fn($v) => $v < 10);
 
-assert(3 === count($filtered), 'The sequence was not processed properly.');
+assert(3 === count($filtered), 'The filtered array must contain 3 elements.');
 
 echo 'The sequence was processed as expected.' . PHP_EOL;
