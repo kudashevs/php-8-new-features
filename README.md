@@ -57,7 +57,7 @@ More information:
 [[rfc](https://wiki.php.net/rfc/throw_expression)]
 
 
-### New `mixed` type
+### *New `mixed` type*
 Since PHP 8 it is possible to use the `mixed` type which is equivalent to the union type declaration  
 array|bool|callable|int|float|object|resource|string|null. The `mixed` type can be used for type-hinting
 a return type, functions or methods arguments or a property type.
@@ -73,7 +73,7 @@ More information:
 [[rfc](https://wiki.php.net/rfc/mixed_type_v2)]
 
 
-### Trailing commas in parameter list
+### *Trailing commas in parameter list*
 Since PHP 8 it is possible to use trailing commas not only in function calls, but in a function declaration
 parameters list and in a closure use() list as well. This improves language consistency.
 ```php
