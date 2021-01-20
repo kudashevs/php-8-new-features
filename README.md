@@ -6,12 +6,12 @@ contains a Dockerfile that allows you to build a PHP 8 image with all these exam
 to get familiar with the latest changes in PHP 8 and how they work without installing it on your computer). 
 
 ### Table of Contents  
-[Usage](#usage)  
+[Image usage](#usage)  
 [PHP 8 improvements](#php-8-improvements)  
 [New features in PHP 8](#new-features-in-php-8)  
 [New functions in PHP 8](#new-functions-in-php-8)
 
-## Usage
+## Image usage
 
 This repo contains a Dockerfile that allows you build a PHP 8 image with all its code. To build an image you need
 Docker software to be installed on your computer. For more information on how to build and use the container from this repo,
