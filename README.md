@@ -6,7 +6,7 @@ contains a Dockerfile that allows you to build a PHP 8 image with all these exam
 to get familiar with the latest changes in PHP 8 and how they work without installing it on your computer). 
 
 ### Table of Contents  
-[Image usage](#usage)  
+[Image usage](#image-usage)  
 [PHP 8 improvements](#php-8-improvements)  
 [New features in PHP 8](#new-features-in-php-8)  
 [New functions in PHP 8](#new-functions-in-php-8)
