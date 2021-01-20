@@ -73,6 +73,24 @@ More information:
 [[rfc](https://wiki.php.net/rfc/mixed_type_v2)]
 
 
+### Trailing commas in parameter list
+Since PHP 8 it is possible to use trailing commas not only in function calls, but in a function declaration
+parameters list and in a closure use() list as well. This improves language consistency.
+```php
+function doSomething(
+    string $foo,
+    int $bar,
+    int $baz,
+) {
+    /* process data */
+}
+```
+More information:
+[[documentation](https://www.php.net/manual/en/functions.arguments.php)]
+[[rfc parameter list](https://wiki.php.net/rfc/trailing_comma_in_parameter_list)]
+[[rfc use list](https://wiki.php.net/rfc/trailing_comma_in_closure_use_list)]
+
+
 ## New features in PHP 8
 
 ### *Named arguments*
