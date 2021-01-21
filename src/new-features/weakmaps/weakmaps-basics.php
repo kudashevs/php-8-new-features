@@ -4,7 +4,6 @@
  * From the RFC (https://wiki.php.net/rfc/weak_maps): Weak maps allow creating a map from objects to arbitrary values
  * (similar to SplObjectStorage) without preventing the objects that are used as keys from being garbage collected.
  * If an object key is garbage collected, it will simply be removed from the map.
- *
  */
 $weakMap = new \WeakMap();
 
