@@ -7,9 +7,9 @@ to get familiar with the latest changes in PHP 8 and how they work without insta
 
 ### Table of Contents  
 [Image usage](#image-usage)  
-[PHP 8 improvements](#php-8-improvements)  
 [New features in PHP 8](#new-features-in-php-8)  
-[New functions in PHP 8](#new-functions-in-php-8)
+[New functions in PHP 8](#new-functions-in-php-8)  
+[PHP 8 improvements](#php-8-improvements)
 
 ## Image usage
 
@@ -17,78 +17,6 @@ This repo contains a Dockerfile that allows you build a PHP 8 image with all its
 Docker software to be installed on your computer. For more information on how to build and use the container from this repo,
 please refer to the documentation in [USAGE.md](USAGE.md). For more information on how to use the Docker software,
 please refer to [docker docs](https://docs.docker.com) site and [Get started](https://docs.docker.com/get-started/) section.   
-
-## PHP 8 improvements
-
-### *Object classname*
-Since PHP 8 it is possible to use magic constant `::class` (which returns the fully qualified class name) on a class instance:
-```php
-echo $object::class;
-```
-More information:
-[[example](src/improvements/object-classname.php)]
-[[documentation](https://www.php.net/manual/en/language.constants.predefined.php)]
-[[rfc](https://wiki.php.net/rfc/class_name_literal_on_object)]
-
-
-### *Non-capturing catches*
-Since PHP 8 it is possible to catch exceptions only by their type without capturing the object.
-```php
-try {
-    /* do something */
-} catch (SpecificException) {
-    echo "A SpecificException was thrown.";
-}
-```  
-More information:
-[[example](src/improvements/non-capturing-catches.php)]
-[[documentation](https://www.php.net/manual/en/language.exceptions.php)]
-[[rfc](https://wiki.php.net/rfc/non-capturing_catches)]
-
-
-### *`throw` becomes an expression*
-Since PHP 8 `throw` is no longer a statement but an expression.
-```php
-$value = $nullable ?? throw new SpecificException();
-```
-More information:
-[[example](src/improvements/throw-expression.php)]
-[[documentation](https://www.php.net/manual/en/language.exceptions.php)]
-[[rfc](https://wiki.php.net/rfc/throw_expression)]
-
-
-### *New `mixed` type*
-Since PHP 8 it is possible to use the `mixed` type which is equivalent to the union type declaration  
-array|bool|callable|int|float|object|resource|string|null. The `mixed` type can be used for type-hinting
-a return type, functions or methods arguments or a property type.
-```php
-function doSomething(mixed $input): mixed 
-{
-    /* process $input */
-}
-```
-More information:
-[[example](src/improvements/mixed-type.php)]
-[[documentation](https://www.php.net/manual/en/language.types.declarations.php)]
-[[rfc](https://wiki.php.net/rfc/mixed_type_v2)]
-
-
-### *Trailing commas in parameter list*
-Since PHP 8 it is possible to use trailing commas not only in function calls, but in a function declaration
-parameters list and in a closure use() list as well. This improves language consistency.
-```php
-function doSomething(
-    string $foo,
-    int $bar,
-    int $baz,
-) {
-    /* process data */
-}
-```
-More information:
-[[documentation](https://www.php.net/manual/en/functions.arguments.php)]
-[[rfc parameter list](https://wiki.php.net/rfc/trailing_comma_in_parameter_list)]
-[[rfc use list](https://wiki.php.net/rfc/trailing_comma_in_closure_use_list)]
 
 
 ## New features in PHP 8
@@ -266,3 +194,75 @@ More information:
 [documentation]
 [[rfc](https://wiki.php.net/rfc/get_debug_type)]
 
+
+## PHP 8 improvements
+
+### *Object classname*
+Since PHP 8 it is possible to use magic constant `::class` (which returns the fully qualified class name) on a class instance:
+```php
+echo $object::class;
+```
+More information:
+[[example](src/improvements/object-classname.php)]
+[[documentation](https://www.php.net/manual/en/language.constants.predefined.php)]
+[[rfc](https://wiki.php.net/rfc/class_name_literal_on_object)]
+
+
+### *Non-capturing catches*
+Since PHP 8 it is possible to catch exceptions only by their type without capturing the object.
+```php
+try {
+    /* do something */
+} catch (SpecificException) {
+    echo "A SpecificException was thrown.";
+}
+```  
+More information:
+[[example](src/improvements/non-capturing-catches.php)]
+[[documentation](https://www.php.net/manual/en/language.exceptions.php)]
+[[rfc](https://wiki.php.net/rfc/non-capturing_catches)]
+
+
+### *`throw` becomes an expression*
+Since PHP 8 `throw` is no longer a statement but an expression.
+```php
+$value = $nullable ?? throw new SpecificException();
+```
+More information:
+[[example](src/improvements/throw-expression.php)]
+[[documentation](https://www.php.net/manual/en/language.exceptions.php)]
+[[rfc](https://wiki.php.net/rfc/throw_expression)]
+
+
+### *New `mixed` type*
+Since PHP 8 it is possible to use the `mixed` type which is equivalent to the union type declaration  
+array|bool|callable|int|float|object|resource|string|null. The `mixed` type can be used for type-hinting
+a return type, functions or methods arguments or a property type.
+```php
+function doSomething(mixed $input): mixed 
+{
+    /* process $input */
+}
+```
+More information:
+[[example](src/improvements/mixed-type.php)]
+[[documentation](https://www.php.net/manual/en/language.types.declarations.php)]
+[[rfc](https://wiki.php.net/rfc/mixed_type_v2)]
+
+
+### *Trailing commas in parameter list*
+Since PHP 8 it is possible to use trailing commas not only in function calls, but in a function declaration
+parameters list and in a closure use() list as well. This improves language consistency.
+```php
+function doSomething(
+    string $foo,
+    int $bar,
+    int $baz,
+) {
+    /* process data */
+}
+```
+More information:
+[[documentation](https://www.php.net/manual/en/functions.arguments.php)]
+[[rfc parameter list](https://wiki.php.net/rfc/trailing_comma_in_parameter_list)]
+[[rfc use list](https://wiki.php.net/rfc/trailing_comma_in_closure_use_list)]
