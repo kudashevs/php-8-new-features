@@ -5,8 +5,8 @@
  * because throw is a statement and not an expression.
  */
 try {
-    $value = false ?: throw new InvalidArgumentException();
-} catch (InvalidArgumentException) {
+    $value = false ?: throw new \InvalidArgumentException();
+} catch (\InvalidArgumentException) {
     die('The exception was thrown as expected because throw is an expression.' . PHP_EOL);
 }
 
