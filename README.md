@@ -29,8 +29,8 @@ explode(separator: ' ', string: 'a b');
 explode(string: 'a b', separator: ' ');
 ```
 Additional information:
-- makes code shorter and more readable
-- helps to solve the inconsistency in some cases
+- make code shorter and more readable
+- help to solve the inconsistency in some cases
 
 More information:
 [[examples](src/new-features/named-arguments)]
@@ -68,9 +68,9 @@ function doSomething(int|float|string|Stringable|null $input): string|null
 }
 ```
 Additional information:
-- makes code more flexible and secure
-- accepts multiple types including pseudo types
-- allows us chaining build-in and our own types
+- make code more flexible and secure
+- accept multiple types including pseudo types
+- allow us chaining build-in or our-own types
 - use strict_types to make type-check even stronger
 - **caution:** `null` cannot be used as a standalone type
 
