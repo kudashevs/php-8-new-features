@@ -110,6 +110,7 @@ $map[$obj] = 42;
 ```
 Additional information:
 - a brand new build-in array like class
+- accepts only objects as keys
 - does not prevent the GC to collect an object 
 - suits perfectly for self-cleaning cache
 
