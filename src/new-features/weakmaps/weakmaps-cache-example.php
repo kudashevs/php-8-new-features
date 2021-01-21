@@ -90,7 +90,6 @@ $firstTimeRateForA = $repo->getRateByProduct($productA);
 assert(1 === $repo->getCacheCount());
 $cachedRateForA = $repo->getRateByProduct($productA);
 assert($firstTimeRateForA === $cachedRateForA);
-echo 'The number of cached items ' . $repo->getCacheCount() . PHP_EOL;
 
 /*
  * After the first request, a rating value for a ProductB instance should be evaluated and its value
@@ -101,7 +100,6 @@ $firstTimeRateForB = $repo->getRateByProduct($productB);
 assert(2 === $repo->getCacheCount());
 $cachedForB = $repo->getRateByProduct($productB);
 assert($firstTimeRateForB === $cachedForB);
-echo 'The number of cached items ' . $repo->getCacheCount() . PHP_EOL;
 
 /*
  * The ProductA instance is unset because it is no longer in use (it could be any reason).
@@ -112,4 +110,5 @@ unset($productA);
  * Since the ProductA instance was unset the number of cached items is expected to decrease.
  */
 assert(1 === $repo->getCacheCount());
-echo 'The number of cached items ' . $repo->getCacheCount() . PHP_EOL;
+
+echo 'The specific values were evaluated, cached, and destroyed as expected.' . PHP_EOL;
