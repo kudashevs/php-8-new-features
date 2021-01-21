@@ -34,4 +34,4 @@ assert($title === $video->getTitle(), 'The title property was not set as expecte
 assert($duration === $video->getRawDuration(),'The duration property was not set as expected.');
 assert(1 === $video->getStatus(), 'The status property was not set as expected.');
 
-echo 'The parameters of the ' . $video::class . ' object were set as expected.' . PHP_EOL;
+echo 'The properties of the ' . $video::class . ' object were set as expected.' . PHP_EOL;
