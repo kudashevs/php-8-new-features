@@ -10,7 +10,6 @@ $fileHandler = fopen(DUMMY_FILE, 'rb');
 $resourceId = get_resource_id($fileHandler);
 
 assert(is_int($resourceId), 'Unexpected handler was returned.');
-
 echo 'The resource id is ' . $resourceId . '.' . PHP_EOL;
 
 fclose($fileHandler);
