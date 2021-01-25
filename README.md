@@ -200,6 +200,18 @@ More information:
 
 ## PHP 8 improvements
 
+### JIT (just in time compilation)
+PHP 8 introduces a new JIT compiler which is an independent part of OPCache. The idea under the JIT is to translate
+PHP byte-code before it runs into native code (just like C/C++ produces). It gives a significant performance improvement
+for heavy cpu applications. However, it increases complexity and makes code support and maintenance more difficult.
+The JIT is disabled by default. 
+```php.ini
+opcache.enable=1
+opcache.jit_buffer_size=64M
+opcache.jit=tracing
+```
+
+
 ### *Object classname*
 Since PHP 8 it is possible to use magic constant `::class` (which returns the fully qualified class name) on a class instance:
 ```php
