@@ -5,6 +5,6 @@ $needleAtTheEnd = 'dog';
 
 $found = str_ends_with($haystack, $needleAtTheEnd);
 
-assert(true === $found, 'Needle "' . $needleAtTheEnd . '"" must exist at the end of the haystack.');
+assert(true === $found, 'The needle "' . $needleAtTheEnd . '"" must exist at the end of the haystack.');
 
-echo 'Needle "' . $needleAtTheEnd . '" was found at the end of the haystack.' . PHP_EOL;
+echo 'The needle "' . $needleAtTheEnd . '" was found at the end of the haystack.' . PHP_EOL;
