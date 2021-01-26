@@ -250,6 +250,14 @@ More information:
 [[rfc](https://wiki.php.net/rfc/throw_expression)]
 
 
+### New `static` return 
+Since PHP 8 it is possible to specify the `static` return type. It can be used only as a return type.
+More information:
+[[example](src/improvements/return-static.php)]
+[[documentation](https://www.php.net/manual/en/language.types.declarations.php)]
+[[rfc](https://wiki.php.net/rfc/static_return_type)]
+
+
 ### *New `mixed` type*
 Since PHP 8 it is possible to use the `mixed` type which is equivalent to the union type declaration  
 array|bool|callable|int|float|object|resource|string|null. The `mixed` type can be used for type-hinting
