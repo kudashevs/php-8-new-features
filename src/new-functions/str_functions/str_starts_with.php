@@ -5,6 +5,6 @@ $needleAtTheStart = 'the';
 
 $found = str_starts_with($haystack, $needleAtTheStart);
 
-assert(true === $found, 'Needle "' . $needleAtTheStart . '"" must exist at the beginning of the haystack.');
+assert(true === $found, 'The needle "' . $needleAtTheStart . '"" must exist at the beginning of the haystack.');
 
-echo 'Needle "' . $needleAtTheStart . '" was found at the beginning of the haystack.' . PHP_EOL;
+echo 'The needle "' . $needleAtTheStart . '" was found at the beginning of the haystack.' . PHP_EOL;
