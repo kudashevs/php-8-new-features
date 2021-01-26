@@ -23,7 +23,8 @@ please refer to [docker docs](https://docs.docker.com) site and [Get started](ht
 
 ### *Named arguments*
 PHP 8 allows us to pass specific names/identifiers for functions or methods arguments. It gives us the possibility
-to provide all parameters in any order we like. We can even provide only required parameters and skip optional ones.  
+to identify the arguments and provide them in any order we like. We can even provide only the required arguments
+and skip optional ones.  
 ```php
 explode(separator: ' ', string: 'a b');
 explode(string: 'a b', separator: ' ');
