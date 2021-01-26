@@ -201,7 +201,7 @@ More information:
 
 ## PHP 8 improvements
 
-### JIT (just in time compilation)
+### *JIT (just in time compilation)*
 PHP 8 introduces a new JIT compiler which is an independent part of OPCache. The idea under the JIT is to translate
 PHP byte-code before it runs into native code (just like C/C++ produces). It gives a significant performance improvement
 for heavy cpu applications. However, it increases complexity and makes code support and maintenance more difficult.
