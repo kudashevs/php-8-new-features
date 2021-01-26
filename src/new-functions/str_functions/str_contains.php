@@ -5,6 +5,6 @@ $needle = 'quick';
 
 $found = str_contains($haystack, $needle);
 
-assert(true === $found, 'Needle "' . $needle . '"" must exist in the haystack.');
+assert(true === $found, 'The needle "' . $needle . '"" must exist in the haystack.');
 
-echo 'Needle "' . $needle . '" was found in the haystack.' . PHP_EOL;
+echo 'The needle "' . $needle . '" was found in the haystack.' . PHP_EOL;
