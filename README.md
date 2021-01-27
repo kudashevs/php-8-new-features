@@ -21,6 +21,16 @@ please refer to [docker docs](https://docs.docker.com) site and [Get started](ht
 
 ## New features in PHP 8
 
+### *Attributes*
+PHP 8 allows us to provide structured metadata to classes, properties, constants, methods, functions, and parameters
+declarations through the special new brand syntax. It gives us the possibility to read the metadata through Reflection API
+and use this metadata at runtime.      
+More information:
+[[examples](src/new-features/attributes)]
+[[documentation](https://www.php.net/manual/en/language.attributes.php)]
+[[rfc](https://wiki.php.net/rfc/attributes_v2)]
+
+
 ### *Named arguments*
 PHP 8 allows us to pass specific names/identifiers for functions or methods arguments. It gives us the possibility
 to identify the arguments and provide them in any order we like. We can even provide only the required arguments
