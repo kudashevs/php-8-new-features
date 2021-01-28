@@ -1,5 +1,5 @@
 #!/usr/bin/env php
-<?php
+<?php declare(strict_types=1);
 
 define('VERBOSE', ('cli' === php_sapi_name() && array_intersect(['-v', '--verbose'], $argv)));
 define('SOURCE_FOLDER', dirname(__DIR__) . '/src/');
