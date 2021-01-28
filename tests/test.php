@@ -1,3 +1,4 @@
+#!/usr/bin/env php
 <?php
 
 define('VERBOSE', ('cli' === php_sapi_name() && array_intersect(['-v', '--verbose'], $argv)));
