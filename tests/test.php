@@ -1,11 +1,16 @@
 <?php
 
+define('VERBOSE', ('cli' === php_sapi_name() && array_intersect(['-v', '--verbose'], $argv)));
 define('SOURCE_FOLDER', dirname(__DIR__) . '/src/');
 
 $files = glob(SOURCE_FOLDER . '{,*,*/*,*/*/*,*/*/*/*}.php', GLOB_BRACE);
 
 $executed = 0;
 foreach ($files as $file) {
+    if (VERBOSE) {
+        echo $file . PHP_EOL;
+    }
+
     $output = null; $code = null;
     exec('php ' . $file, $output, $code);
 
