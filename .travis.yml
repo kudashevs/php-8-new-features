@@ -9,4 +9,4 @@ install:
 
 script:
   - docker ps | grep -q php-8-new-features
-  - docker exec -it php8 php tests/test.php
+  - docker exec -it php8 php tests/test.php -v
