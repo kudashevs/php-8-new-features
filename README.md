@@ -32,7 +32,7 @@ public function show(Post $id) {
 }
 ```
 Additional information:
-- production-ready structured metadata build-in in PHP
+- production-ready structured metadata built-in in PHP
 - use syntax based on #, so do not break the backward compatibility 
 - each attribute is a separate class with its own responsibility
 - can be used on a wide range of declarations (classes, methods, arguments, etc.)
