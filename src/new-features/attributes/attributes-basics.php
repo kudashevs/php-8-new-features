@@ -45,6 +45,16 @@ $reflection = new \ReflectionObject(new Foo());
 $attributes = $reflection->getAttributes();
 
 /**
+ * The ReflectionAttribute instance provides methods which allow to get the attribute name, its arguments, and
+ * to instantiate the Attribute. The method getArguments() is used to get the arguments without instantiation.
+ */
+$attributeArgument = current($attributes[0]->getArguments());
+assert(
+    'value from attribute' === $attributeArgument,
+    'The argument returned by ReflectionAttribute instance must be "value from attribute".'
+);
+
+/**
  * The ReflectionAttribute instance provides the method newInstance() which is used to instantiate an Attribute class.
  */
 $instance = $attributes[0]->newInstance();
@@ -56,7 +66,7 @@ assert(
 $attributeValue = $instance->getAttributeValue();
 assert(
     'value from attribute' === $attributeValue,
-    'The ' . Foo::class . ' class attribute\'s argument must be "value from attribute".'
+    'The argument returned by SimpleAttribute instance must be "value from attribute".'
 );
 
 echo 'The ' . Foo::class . ' class attribute was processed as expected.' . PHP_EOL;
