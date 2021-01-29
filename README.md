@@ -24,7 +24,14 @@ please refer to [docker docs](https://docs.docker.com) site and [Get started](ht
 ### *Attributes*
 PHP 8 allows us to add structured metadata to classes, properties, constants, methods, functions, and parameters
 declarations using the special new brand syntax. It gives us the possibility to read the metadata through Reflection API
-and use this metadata at runtime.      
+and use this metadata at runtime.  
+```php
+#[Route("/posts/{id}", methods: ["GET"])]
+public function show(Post $id) {
+    /* do something */
+}
+```
+
 More information:
 [[examples](src/new-features/attributes)]
 [[documentation](https://www.php.net/manual/en/language.attributes.php)]
