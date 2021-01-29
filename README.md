@@ -31,6 +31,12 @@ public function show(Post $id) {
     /* do something */
 }
 ```
+Additional information:
+- production-ready structured metadata build-in in PHP
+- use syntax based on #, so do not break the backward compatibility 
+- each attribute is a separate class with its own responsibility
+- can be used on a wide range of declarations (classes, methods, arguments, etc.)
+- are managed by IDEs including syntax correction, autocompletion, etc.
 
 More information:
 [[examples](src/new-features/attributes)]
