@@ -7,7 +7,8 @@
 
 /**
  * To become a special Attribute class the class should be marked with #[Attribute] declaration. This declaration
- * accepts arguments (the arguments are optional). The arguments can only be literal values or constant expressions.
+ * accepts a special bitmask argument which can be used to restrict the type of declaration an attribute can be
+ * assigned to and to mark it repeatable (by default an attribute can be used only once per declaration).
  */
 #[\Attribute()]
 class SimpleAttribute
