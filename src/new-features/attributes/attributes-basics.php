@@ -27,8 +27,9 @@ class SimpleAttribute
 }
 
 /**
- * When the special Attribute class is declared it can be used to add metadata for various declarations in code.
- * The declarations of classes, properties, methods, functions, parameters, and class constants are supported.
+ * This declaration accepts arguments (the arguments are optional). The arguments can only be literal values
+ * or constant expressions. The arguments are passed to the attribute constructor when an instance is requested.
+ * The declarations are supported on classes, properties, methods, functions, parameters, and class constants.
  */
 #[SimpleAttribute('value from attribute')]
 class Foo
