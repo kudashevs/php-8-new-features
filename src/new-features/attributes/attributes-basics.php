@@ -45,7 +45,7 @@ $reflection = new \ReflectionObject(new Foo());
 $attributes = $reflection->getAttributes();
 
 /**
- * The Reflection APIs provides the special method newInstance() which is used to instantiate an Attribute class.
+ * The ReflectionAttribute instance provides the method newInstance() which is used to instantiate an Attribute class.
  */
 $instance = $attributes[0]->newInstance();
 assert(
