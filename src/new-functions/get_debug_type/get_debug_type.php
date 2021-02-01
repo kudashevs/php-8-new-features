@@ -25,7 +25,7 @@ namespace {
 
     $image = imagecreate(1, 1);
     /*
-     * From PHP 8 the GD extension returns \GdImage object instead of resource.
+     * From PHP 8 the GD imagecreate() returns \GdImage object instead of resource.
      */
     assert(is_resource($image) || is_a($image, \GdImage::class), 'The GD image library does not work properly.');
 
