@@ -12,14 +12,14 @@ $mixedTypes = [
     'null' => null,
 ];
 
-function returnSomething(mixed $mixed): mixed
+function returnMixed(mixed $mixed): mixed
 {
     return $mixed;
 }
 
 try {
     foreach ($mixedTypes as $mixedName => $mixedValue) {
-        returnSomething($mixedValue);
+        returnMixed($mixedValue);
         echo 'The "' . $mixedName . '" type was processed successfully.' . PHP_EOL;
     }
 } catch (\Error $e) {
