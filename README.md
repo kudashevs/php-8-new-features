@@ -8,8 +8,17 @@ to get familiar with the latest changes in PHP 8 and how they work without insta
 ### Table of Contents  
 [Image usage](#image-usage)  
 [New features in PHP 8](#new-features-in-php-8)  
+ * [Attributes](#attributes)  
+ * [Named arguments](#named-arguments)  
+ * [Constructor property promotion](#constructor-property-promotion)  
+ * [Union types](#union-types)  
+ * [Nullsafe operator](#nullsafe-operator)  
+ * [WeakMap class](#weakmap-class)  
+ * [Match expression](#match-expression)  
+ * [Stringable interface](#stringable-interface)  
+
 [New functions in PHP 8](#new-functions-in-php-8)  
-[PHP 8 improvements](#php-8-improvements)
+[PHP 8 improvements](#php-8-improvements)  
 
 ## Image usage
 
