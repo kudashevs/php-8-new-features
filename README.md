@@ -18,7 +18,7 @@ to get familiar with the latest changes in PHP 8 and how they work without insta
  * [Stringable interface](#stringable-interface)  
 
 [New functions in PHP 8](#new-functions-in-php-8)  
-[PHP 8 improvements](#php-8-improvements)  
+[New PHP 8 improvements](#php-8-improvements)  
 
 ## Image usage
 
