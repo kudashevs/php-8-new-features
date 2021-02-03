@@ -306,6 +306,16 @@ More information:
 [[rfc](https://wiki.php.net/rfc/mixed_type_v2)]
 
 
+### New `ValueError` exception 
+The brand-new exception `ValueError` is thrown when an argument has the correct type, but its value is incorrect.
+This exception is inherited from the `\Error` and is used in a lot of the internal functions since PHP 8.
+```php
+setcookie(''); // Uncaught ValueError: setcookie(): Argument #1 ($name) cannot be empty
+```
+More information:
+[[documentation](https://www.php.net/manual/en/class.valueerror.php)]
+[rfc]
+
 ### *Trailing commas in parameter list*
 Since PHP 8 it is possible to use trailing commas not only in function calls, but in a function declaration
 parameters list and in a closure use() list as well. This improves language consistency.
